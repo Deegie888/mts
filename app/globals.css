@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Gurajada';
+    src: url('/fonts/Gurajada-Regular.ttf') format('truetype');
+    /* Add additional font formats here (e.g., woff, woff2) for better cross-browser compatibility */
+}
+  
+body {
+    font-family: 'Gurajada', sans-serif;
+}
+
+/* Styling the scrollbar track */
+::-webkit-scrollbar {
+    width: 12px; /* Adjust the width as needed */
+}
+  
+  /* Styling the scrollbar thumb (draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Change the background color */
+}
+
+/* Styling the scrollbar track in Edge */
+::-webkit-scrollbar-track {
+    background-color: #60a5fa; /* Change the background color */
+}
+  
+/* Styling the scrollbar thumb in Edge */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Change the background color */
+}
+
+.level-btn {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
