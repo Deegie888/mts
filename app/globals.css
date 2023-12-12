@@ -12,6 +12,26 @@ body {
     font-family: 'Gurajada', sans-serif;
 }
 
+.bg_game {
+    background-image: url('/images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.btn_custom{
+    box-shadow: 0px 4px 4px 0px #00000040;
+    box-shadow: 0px 4px 4px 0px #00000040 inset;
+    border: 2px solid #F5F5F5;
+    border-radius: 20px;
+}
+
+.txt_header_custom {
+    text-shadow: 0 0 8px #000;
+    letter-spacing: 5px;
+}
+
 /* Styling the scrollbar track */
 ::-webkit-scrollbar {
     width: 12px; /* Adjust the width as needed */

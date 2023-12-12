@@ -59,7 +59,7 @@ export default function Navigation () {
             <button
                 onClick={()=>setOpenSettings(!openSettings)}
             >
-                <AiFillSetting className="text-white w-6 h-6 hover:text-slate-900" />
+                <AiFillSetting className="text-slate-700 w-10 h-10 hover:text-slate-800" />
             </button>
             <div className={`${openSettings ? 'w-full md:w-1/5 h-60 p-6 absolute top-20 text-white bg-slate-900 rounded-lg space-y-6' : 'hidden'}`}>
                 <p className="text-center text-xl font-bold">Player Info</p>

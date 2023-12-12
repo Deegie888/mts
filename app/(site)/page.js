@@ -85,7 +85,7 @@ export default function Home() {
   return (
     <div>
       <Navigation />
-      <main className="absolute z-10 text-white w-full h-full flex p-6 justify-center bg-gradient-to-b from-amber-300 from-30% to-teal-300">
+      <main className="absolute z-10 text-white w-full h-full flex p-6 justify-center bg-gradient-to-b from-30% to-teal-300 bg_game">
         <div className='w-full md:w-3/5'>
           <div className='w-fullp-6 space-y-3'>
             <div className='flex justify-center'>
@@ -96,32 +96,32 @@ export default function Home() {
                 alt='logo'
               />
             </div>
-            <p className='text-2xl text-center font-bold font-sans level-btn'>Select level</p>
+            <p className='text-2xl p-1 text-center font-bold font-sans txt_header_custom'>Select Level</p>
             <div className='flex justify-center gap-2 p-10'>
               <button 
                 onClick={()=>changeDifficulty('easy')}
-                className={`w-1/3 md:w-1/6 p-2 rounded-lg bg-green-400 font-bold ring-white ${difficulty == 'easy' ? 'ring-4' : 'ring-2'}`}
+                className={`w-1/3 md:w-1/6 p-2 rounded-lg bg-green-400 font-bold hover:bg-blue-300 focus:bg-blue-500 ring-white btn_custom ${difficulty == 'easy' ? 'ring-4 bg-blue-500' : 'ring-2'}`}
               >
-                easy
+                Easy
               </button>
               <button 
                 onClick={()=>changeDifficulty('normal')}
-                className={`w-1/3 md:w-1/6 p-2 rounded-lg bg-amber-400 font-bold ring-white ${difficulty == 'normal' ? 'ring-4' : 'ring-2'}`}
+                className={`w-1/3 md:w-1/6 p-2 rounded-lg bg-amber-400 font-bold hover:bg-blue-300 focus:bg-blue-500 ring-white btn_custom ${difficulty == 'normal' ? 'ring-4 bg-blue-500' : 'ring-2'}`}
               >
-                normal
+                Normal
               </button>
               <button 
                 onClick={()=>changeDifficulty('hard')}
-                className={`w-1/3 md:w-1/6 p-2 rounded-lg bg-red-600 font-bold ring-white ${difficulty == 'hard' ? 'ring-4' : 'ring-2'}`}
+                className={`w-1/3 md:w-1/6 p-2 rounded-lg bg-red-600 font-bold hover:bg-blue-300 focus:bg-blue-500 ring-white btn_custom ${difficulty == 'hard' ? 'ring-4 bg-blue-500' : 'ring-2'}`}
               >
-                hard
+                Hard
               </button>
             </div>
           </div>
           
-          <div className='w-full p-6 rounded-lg bg-blue-400 space-y-3'>
+          <div className='w-full p-6 rounded-3xl bg-blue-400 space-y-3 shadow-2xl'>
             
-            <div className='rounded-lg p-10 w-full h-40 md:h-60 overflow-y-scroll'>
+            <div className='rounded-lg p-10 w-full h-40 md:h-60 overflow-y-scroll '>
               {
                 difficulty == 'easy' && (<div className='flex flex-wrap gap-5'>
                   {

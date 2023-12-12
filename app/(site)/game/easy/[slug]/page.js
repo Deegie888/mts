@@ -8,9 +8,9 @@ import { useEffect, useState } from "react";
 export default function Game ({ params }) {
 
     return (
-        <div className="absolute w-full h-full flex justify-center p-6 bg-gradient-to-b from-amber-300 from-30% to-teal-300">
+        <div className="absolute w-full h-full flex justify-center p-6 bg-gradient-to-b from-amber-300 from-30% to-teal-300 bg_game">
           <Navigation />
-          <div className="w-full space-y-5">
+          <div className="w-full space-y-5 shadow-2xl">
             <div>
               <Logo />
             </div>
